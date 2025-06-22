@@ -82,6 +82,10 @@ private class Graph<T>(private val edges: List<Edge<T>>, horizontalPadding: Dp, 
     private val _positions = MutableStateFlow<Map<T, IntOffset>>(emptyMap())
     val positions: StateFlow<Map<T, IntOffset>> = _positions
 
+//    val city: StateFlow<String>
+//        field = MutableStateFlow("")
+
+
     private fun updatePositions() {
         _positions.value = nodeAreas.mapValues { v -> v.value.topLeft }
     }

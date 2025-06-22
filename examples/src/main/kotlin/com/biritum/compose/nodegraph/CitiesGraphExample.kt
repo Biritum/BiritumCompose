@@ -13,7 +13,6 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.toComposeImageBitmap
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Window
@@ -21,10 +20,7 @@ import androidx.compose.ui.window.application
 import com.biritum.compose.examples.generated.resources.Res
 import com.biritum.compose.examples.generated.resources.city
 import com.biritum.compose.nodegraph.NodeGraphScope.Companion.nodeId
-import org.jetbrains.compose.resources.ExperimentalResourceApi
 import org.jetbrains.compose.resources.imageResource
-import java.io.FileInputStream
-import javax.imageio.ImageIO
 
 
 data class City(val name: String, val continent: String)
